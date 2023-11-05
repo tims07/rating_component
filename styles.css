@@ -66,9 +66,7 @@ img {
     background-color: var(--dark-blue);
     max-width: 375px;
     height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    
 
 }
 
@@ -115,9 +113,35 @@ p {
     margin-top: 0.5rem;
     padding: 0.75rem;
     text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
 }
 
 .submit:hover {
     background-color: var(--active-white);
     color: var(--primary-clr);
+}
+
+/* Thank you */
+
+.thank-img {
+    width: 50%;
+}
+
+h4 {
+    color: var(--primary-clr);
+    background-color: var(--very-dark-blue);
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
+    border-radius: 3rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.thanks {
+    align-items: center;
 }
