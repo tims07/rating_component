@@ -1,0 +1,123 @@
+/* ============= GLOBAL CSS =============== */
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+} 
+
+:root {
+    --primary-clr: hsl(25, 97%, 53%);
+    --active-white: hsl(0, 0%, 100%);
+    --light-gray: hsl(217, 12%, 63%);
+    --medium-gray: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --font-overpass: 'Overpass';
+    --transition: 0.3s ease-in-out all;
+
+    /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+}
+
+body {
+    font-family: var(--font-overpass), sans-serif;
+    min-height: 90vh;
+    background-color: var(--very-dark-blue);
+    display: grid;
+    place-content: center;
+}
+
+.circle {
+    background-color: var(--very-dark-blue);
+    z-index: 1;
+    border-radius: 1000px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    width: 20px;
+    border-radius: 1000px;
+    z-index: 10;
+  }
+
+.container {
+    border-radius: 1.5rem;
+    padding: 1.5rem 1.75rem;
+    background-color: var(--dark-blue);
+    max-width: 375px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+h2 {
+    color: var(--active-white);
+    margin-bottom: 0.8rem;
+    margin-top: 1rem;
+}
+
+p {
+    color: var(--light-gray);
+    font-size: 12px;
+    line-height: 1.7;
+    max-width: 95%;
+    margin-bottom: 0.75rem;
+}
+
+/* buttons */
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    cursor: pointer;
+    color: var(--very-dark-blue);
+    background: var(--medium-gray);
+    border: transparent;
+    border-radius: 1000px;
+    padding: 0.5rem 0.75rem;
+    transition: var(--transition);
+    display: inline-block;
+  }
+.btn:hover {
+  background: var(--active-white);
+  box-shadow: var(--shadow-3);
+}
+
+.submit {
+    width: 100%;
+    background-color: var(--primary-clr);
+    color: white;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    text-transform: uppercase;
+}
+
+.submit:hover {
+    background-color: var(--active-white);
+    color: var(--primary-clr);
+}
