@@ -60,12 +60,16 @@ img {
     z-index: 10;
   }
 
-.container {
+.ratings-container {
     border-radius: 1.5rem;
     padding: 1.5rem 1.75rem;
     background-color: var(--dark-blue);
     max-width: 375px;
     height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
     
 
 }
@@ -118,8 +122,13 @@ p {
 }
 
 .submit:hover {
-    background-color: var(--active-white);
-    color: var(--primary-clr);
+  background-color: var(--active-white);
+  color: var(--primary-clr);
+}
+
+.btn:focus {
+  background-color: var(--active-white);
+  color: var(--primary-clr);
 }
 
 /* Thank you */
@@ -136,12 +145,29 @@ h4 {
     border-radius: 3rem;
 }
 
-.flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+
+
+.thanks-container {
+  border-radius: 1.5rem;
+  padding: 1.5rem 1.75rem;
+  background-color: var(--dark-blue);
+  max-width: 375px;
+  height: 350px;
+  text-align: center;
 }
 
-.thanks {
-    align-items: center;
+.rate-again {
+  width: 100%;
+  background-color: var(--primary-clr);
+  color: white;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
 }
